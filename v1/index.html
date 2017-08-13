@@ -43,13 +43,13 @@
 
 		<link href="uxim17.css" rel="stylesheet">
 
-        <!--[if lt IE 9]>
-        <script src="/assets/js/html5shiv.js"></script>
-        <![endif]-->
+    <!--[if lt IE 9]>
+    <script src="/assets/js/html5shiv.js"></script>
+    <![endif]-->
 
-        <!--[if lt IE 8]>
-        <link href="/assets/css/ie7.css" rel="stylesheet">
-        <![endif]-->
+    <!--[if lt IE 8]>
+    <link href="/assets/css/ie7.css" rel="stylesheet">
+    <![endif]-->
 	</head>
 
 	<body>
@@ -59,7 +59,7 @@
 				<div class="branding-bar">
 				<a href="/?src=header_logo" class="logo"><img src="assets/uxim15.png" alt="UX Immersion 15"></a>
 				<p class="when-and-where">
-					April,&nbsp;2015
+					April,&nbsp;2017
 				</p>
 				</div>
 			</div>
@@ -76,7 +76,7 @@
 
 			<div class="row chunk">
 				<div class="column seven">
-					<p>If you want to design great mobile experiences, then check out these talks from UXIM14:</p>
+					<p>If you want to design great mobile experiences, then check out these talks from UXIM15:</p>
 
 					<ul>
 					<li>Luke Wroblewski on current mobile behavior, data, and trends</li>
@@ -93,13 +93,13 @@
 				<div class="column five">
 					<div class="row chunk email-collect">
 						<div class="email-content get-ready">
-							<p>We’re in the planning stages for our UX Immersion Mobile Conference in <strong>Salt Lake City, UT April 13-15, 2015</strong>. <a href="http://www.uie.com/events/#uxim">Join the email list</a> to get the latest updates about the conference.</p>
+							<p>We’re in the planning stages for our UX Immersion Mobile Conference in <strong>Salt Lake City, UT April 13-15, 2017</strong>. <a href="http://www.uie.com/events/#uxim">Join the email list</a> to get the latest updates about the conference.</p>
 						</div>
 					</div>
 					<div class="row chunk email-collect">
 						<div class="email-content get-ready">
-							<p><strong>Get access</strong> to these conference videos and their presentation materials as well as everything else in <a href="http://aycl.uie.com/ondemand/uxim_2014">All You Can Learn by UIE</a> for only <strong>$23/month</strong></p>
-							<p><a href="http://aycl.uie.com/ondemand/uxim_2014"><button class="button pink">Start Learning Today</button></a></p>
+							<p><strong>Watch the UXIM15 conference</strong> videos and access their presentation materials for <strong>free!</strong></p>
+							<p><a href="http://aycl.uie.com/ondemand/uxim_2014"><button class="button pink">Watch Now</button></a></p>
 						</div>
 					</div>
 				</div>
@@ -111,7 +111,7 @@
 
 	<div class="row chunk">
 		<div class="column full">
-			<h2>Here are the full descriptions of the 8 UXIM14 talks:</h2>
+			<h2>Here are the full descriptions of the 8 UXIM15 talks:</h2>
 		</div>
 	</div>
 
@@ -266,9 +266,9 @@
 		<div class="one-third column speaker-preview email-collect" id="buy-block">
 					<div class="email-content get-ready">
 
-							<p><strong>Get access</strong> to these conference videos and their presentation materials as well as everything else in <a href="http://aycl.uie.com/ondemand/uxim_2014">All You Can Learn by UIE</a> for only <strong>$23/month</strong></p>
+							<p><strong>Watch the UXIM15 conference</strong> videos and access their presentation materials for <strong>free!</strong></p>
 
-							<p><a href="http://aycl.uie.com/ondemand/uxim_2014"><button class="button pink">Start Learning Today</button></a></p>
+							<p><a href="http://aycl.uie.com/ondemand/uxim_2014"><button class="button pink">Watch Now</button></a></p>
 						</div>
 				</div>
 
@@ -277,10 +277,11 @@
 	</div> <!-- END third row of speakers -->
 </div> <!-- END main-wrap -->
 </div> <!-- END main -->
+
 			<hr>
 
-			<div class="footer page">
-				<div class="container contact">
+			<footer class="footer">
+				<div class="container contact page">
 					<div class="half column">
 						<p>
 							Questions or comments? Please send e-mail to <a href="mailto:events@uie.com">events@uie.com</a>.
@@ -298,12 +299,15 @@
 					</div>
 				</div>
 
-				<div class="uie">
+				<div class="uie page">
 					<!-- not loading properly. uses font-family: uie-icons. comes from Typekit? -->
-					<a href="http://uie.com">&#xf003;</a>
+					<a href="http://uie.com" class="logo">
+						<img src="assets/uie.png" alt="UIE">
+					</a>
 				</div>
-			</div>
-		</div>
+			</footer>
+
+		</div> <!-- extra tag? -->
 
 		<!-- Google Analytics? -->
 		<!-- <script type="text/javascript">
@@ -321,10 +325,11 @@
 
 		<!-- handle e-mail submission -->
 
+		<!-- scripts are not being used
 		<script src="uxim15-formatted.js"></script>
 		<script type="text/javascript">
 
-			// this won't work because the php file doesn't exist for me
+		// I don't have this php file, and there's no #int-form element on the page
 			$(document).ready(function(){
 				$("#int-form").submit(function(e){
 					$.ajax({
@@ -353,7 +358,8 @@
 					e.preventDefault();
 				});
 			});
-		</script>
+		 </script>
+	 -->
 
 	</body>
 </html>

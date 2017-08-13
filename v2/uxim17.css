@@ -313,7 +313,7 @@ ins {
   margin-bottom: 2em;
 }
 .get-ready button {
-  margin: auto;
+  margin: 10px auto 0 auto;
 }
 /**
  * Arrange, v1.2
@@ -2449,7 +2449,8 @@ footer {
   /* line 8, ../../../src/scss/components/_footer.scss */
   footer > .page {
     padding-top: 16px;
-    padding-bottom: 24px; }
+    /*padding-bottom: 24px; */
+  }
   /* line 13, ../../../src/scss/components/_footer.scss */
   footer h2 {
     color: #ccccd1;
@@ -2478,11 +2479,13 @@ footer {
   /* line 33, ../../../src/scss/components/_footer.scss */
   footer .logo {
     display: block;
-    width: 120px;
+    width: 200px;
     background: none;
-    margin-bottom: 1em;
+    /*margin-bottom: 1em;
     float: left;
-    margin-right: 1.5em; }
+    margin-right: 1.5em; */
+    margin: 0 auto 1em auto;
+  }
   /* line 42, ../../../src/scss/components/_footer.scss */
   footer p.minor {
     font-style: italic;

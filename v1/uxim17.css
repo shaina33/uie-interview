@@ -57,8 +57,17 @@ h3 {
   font-weight: normal;
   color: #5c626a; }
   /* line 59, ../../../src/scss/core/_base.scss */
+  /* speaker names */
   h3 a {
-    background-position: 0 1.04761904761905em; }
+    background-position: 0 1.04761904761905em;
+    text-decoration: none;
+    color: #797166;
+    font-weight: bold;
+    background-image: none;
+  }
+  h3 a:hover {
+    color: #797166;
+  }
 
 /* line 64, ../../../src/scss/core/_base.scss */
 h4 {
@@ -66,6 +75,10 @@ h4 {
   margin: 1.5em 0 -0.5em;
   font-size: 1em;
   font-weight: bold; }
+  /* speaker session titles */
+  h4 a {
+    font-weight: normal;
+  }
 
 @media screen and (max-width: 600px) {
   /* line 72, ../../../src/scss/core/_base.scss */
@@ -271,7 +284,37 @@ ins {
   line-height: 1.3;
   font-family: "lft-etica","Helvetica Neue",Arial,sans-serif;
   margin: -0.65em 0px 1em; }
+.headshot {
+  display: table;
+  margin-bottom: 10px;
+}
+  .headshot img {
+    width: 71px;
+  }
+  .headshot .image {
+    display: table-cell;
+    padding-right: 5px;
+  }
+  .headshot .speaker {
+    display: table-cell;
+    vertical-align: top;
+  }
+  .headshot h3 {
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .headshot h4 {
+    margin-top: 0;
+    padding-top: 8px;
 
+  }
+.chunk.row {
+  margin-bottom: 2em;
+}
+.get-ready button {
+  margin: 10px auto 0 auto;
+}
 /**
  * Arrange, v1.2
  * A very basic grid system, a bit like Skeleton
@@ -279,30 +322,30 @@ ins {
  * Copyright (c) 2013, Fred LeBlanc
  * All rights reserved.
  *
- * Redistribution and use in source and binary forms, with or without 
+ * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions are met:
  *
- *  - Redistributions of source code must retain the above copyright notice, 
+ *  - Redistributions of source code must retain the above copyright notice,
  *    this list of conditions and the following disclaimer.
  *
- *  - Redistributions in binary form must reproduce the above copyright notice, 
- *    this list of conditions and the following disclaimer in the documentation 
+ *  - Redistributions in binary form must reproduce the above copyright notice,
+ *    this list of conditions and the following disclaimer in the documentation
  *    and/or other materials provided with the distribution.
- * 
- *  - Neither the name of FredHQ nor the names of its contributors 
- *    may be used to endorse or promote products derived from this software 
+ *
+ *  - Neither the name of FredHQ nor the names of its contributors
+ *    may be used to endorse or promote products derived from this software
  *    without specific prior written permission.
  *
- * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" 
- * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE 
- * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE 
- * ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE 
- * LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR 
- * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF 
- * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS 
- * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN 
- * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) 
- * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE 
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+ * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ * ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
+ * LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+ * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+ * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+ * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  * POSSIBILITY OF SUCH DAMAGE.
  */
 /**
@@ -401,7 +444,7 @@ br.clear {
  *    gap    - 4.0% - room between content columns
  *
  * The math:
- *    width  = (# of columns * 4.6667%) + ((# of columns - 1) * 4.0%) 
+ *    width  = (# of columns * 4.6667%) + ((# of columns - 1) * 4.0%)
  */
 /* line 143, ../../../src/scss/core/_arrange.scss */
 .twelfth.column,
@@ -671,7 +714,7 @@ br.clear {
  *    column - 8.3333% - a single-width column of content
  *
  * The math:
- *    width  = (# of columns * 8.3333%) 
+ *    width  = (# of columns * 8.3333%)
  */
 /**
  * Remove the gutters
@@ -1793,30 +1836,30 @@ br.clear {
  * Copyright (c) 2013, Fred LeBlanc
  * All rights reserved.
  *
- * Redistribution and use in source and binary forms, with or without 
+ * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions are met:
  *
- *  - Redistributions of source code must retain the above copyright notice, 
+ *  - Redistributions of source code must retain the above copyright notice,
  *    this list of conditions and the following disclaimer.
  *
- *  - Redistributions in binary form must reproduce the above copyright notice, 
- *    this list of conditions and the following disclaimer in the documentation 
+ *  - Redistributions in binary form must reproduce the above copyright notice,
+ *    this list of conditions and the following disclaimer in the documentation
  *    and/or other materials provided with the distribution.
- * 
- *  - Neither the name of FredHQ nor the names of its contributors 
- *    may be used to endorse or promote products derived from this software 
+ *
+ *  - Neither the name of FredHQ nor the names of its contributors
+ *    may be used to endorse or promote products derived from this software
  *    without specific prior written permission.
  *
- * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" 
- * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE 
- * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE 
- * ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE 
- * LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR 
- * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF 
- * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS 
- * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN 
- * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) 
- * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE 
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+ * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ * ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
+ * LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+ * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+ * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+ * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  * POSSIBILITY OF SUCH DAMAGE.
  */
 /* line 35, ../../../src/scss/core/_gather.scss */
@@ -2041,8 +2084,8 @@ label {
   cursor: default; }
 
 /* line 268, ../../../src/scss/core/_gather.scss */
-.button:first-child {
-  margin-left: 0; }
+/*.button:first-child {
+  margin-left: 0; }*/
 
 /* line 272, ../../../src/scss/core/_gather.scss */
 .button.blue {
@@ -2279,11 +2322,11 @@ label strong {
 /* line 1, ../../../src/scss/components/_header.scss */
 header {
   *zoom: 1;
-  background: #5c5c6a url("/assets/img/background.jpg") no-repeat scroll 50% 50%;
+  background: #5c5c6a url("assets/background.jpg") no-repeat scroll 50% 50%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   display: table-row;
-  height: 1px;
+  height: 150px;
   font-size: 0.9125em; }
   /* line 38, /Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
   header:after {
@@ -2406,7 +2449,8 @@ footer {
   /* line 8, ../../../src/scss/components/_footer.scss */
   footer > .page {
     padding-top: 16px;
-    padding-bottom: 24px; }
+    /*padding-bottom: 24px; */
+  }
   /* line 13, ../../../src/scss/components/_footer.scss */
   footer h2 {
     color: #ccccd1;
@@ -2435,11 +2479,13 @@ footer {
   /* line 33, ../../../src/scss/components/_footer.scss */
   footer .logo {
     display: block;
-    width: 120px;
+    width: 200px;
     background: none;
-    margin-bottom: 1em;
+    /*margin-bottom: 1em;
     float: left;
-    margin-right: 1.5em; }
+    margin-right: 1.5em; */
+    margin: 0 auto 1em auto;
+  }
   /* line 42, ../../../src/scss/components/_footer.scss */
   footer p.minor {
     font-style: italic;
@@ -2647,7 +2693,9 @@ nav {
   padding: 0.6em 1em;
   text-decoration: none;
   text-align: center;
-  font-size: 1.25em; }
+  /*font-size: 1.25em*/
+
+}
   /* line 13, ../../../src/scss/components/_button.scss */
   .button:hover {
     background: #d9818b;
@@ -4730,7 +4778,7 @@ div#on-demand-talks.headshot-listing h4 {
   border: 1px solid #ddd;
   background: #fff;
   padding: 1em 1.5em;
-  margin: 2.5em 0 0;
+  margin: 0 0 1em 0;
   overflow: hidden; }
   /* line 25, ../../../src/scss/core/_ondemand.scss */
   .get-ready.inline-cta {
@@ -4744,7 +4792,7 @@ div#on-demand-talks.headshot-listing h4 {
         display: none; } }
   /* line 36, ../../../src/scss/core/_ondemand.scss */
   .get-ready p {
-    font-size: 1.125em;
+    /*font-size: 1.125em;*/
     width: auto;
     margin: 0; }
   /* line 42, ../../../src/scss/core/_ondemand.scss */

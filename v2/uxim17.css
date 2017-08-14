@@ -321,6 +321,11 @@ ins {
 .get-ready button {
   margin: 10px auto 0 auto;
 }
+section .act.get-ready {
+  max-width: 75%;
+  margin-left: 12.5%;
+  margin-right: 12.5%;
+}
 /**
  * Arrange, v1.2
  * A very basic grid system, a bit like Skeleton
